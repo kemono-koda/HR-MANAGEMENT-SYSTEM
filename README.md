@@ -1,89 +1,93 @@
-# HRM-SYSTEM
+# HR Management System (HRM-SYSTEM)
 
-A simple Web Application that can be used to manage a company's human resources.
+## Project Overview
 
-## Project descripton
+The HR Management System is an ERP-based project designed to efficiently manage human resources within a company. Proper utilization of human resources is crucial for a company’s growth, and our system facilitates this by tracking all relevant records. This group project was developed by four team members.
 
-A group project developed by four team members.
+## User Types
 
-Four type of user: 1. Admin 2. Management
-3. Employee 4. Board of Director
-Common Features for all user:
-1) All users can Login to the system
-2) Can register to the system.
-3) Can manipulate their profile information (edit-deleteview etc.)
-Admin User Functionality: (KHAN, M A MOHIT)
-1) Website Management
-2) Website Updates
-3) Security management
-4) Glitch Fixing/Bug fixing
-5) Frequent news updates
-6) Social Media Management
-7) Monitor performance
-8) User Interface Simplification
-9) monitor website traffic
-10) Can add Management/Employee/Board of Director.
-11) Can verify Management/Employee/Board of Director profiles -- Can block .
-12) Can manipulate Management/Employee/Board of
-Director information (edit-delete-view etc.) etc…
-13) Admin can give update approval
-14) Advertisement Management
-15) Notifications Management
-16) Help Seeking Notifications Management
+There are four types of users in the system:
+1. **Admin**
+2. **Management**
+3. **Employee**
+4. **Board of Director**
 
- Management User Functionality : (AMIN, RUHUL)
-1) Job Requisitions
-2) Job Descriptions
-3) Job Board Posting
-4) Social Recruiting
-5) Job Offer Extension
-6) Background Check
-7) Organizing Training Program
-8) Candidate Pre-Screening
-9) Applicant Tracking System (ATS)
-10) Emp Application Review
-11) Emp Performance
-12) Branded Company Job Sit
-13) Salary Planning
-14) Hiring
-15) Firing
-16) Auto-Response
-Employee User Functionality : (HOSSAIN, MD. FAHAD)
-1) Attendance
-2) Vacation Application
-3) requesting overtime payment
-4) Transfer Application
-5) Resignation Application
-6) Business Idea Presentation
-7) Job reference application
-8) submitting reimbursement slips
-9) self training
-10) promotional application
-11) overall performance
-12) reviewing timesheets and tasks
-13) ensuring all necessary document
-14) profile details
-15) inquiring about available loan programs
-Board of Director User Functionality : (RAHMAN, S.M MUNTASIR)
-1) Training Program Approval
-2) Executive Hiring
-3) Executive Firing
-4) Executive performance Appraisal
-5) Executive Salary
-6) Attendance record
-7) Personnel Planning
-8) Annual Budget
-9) Executive Compensation
-10) Executive Job advertisement
-11) Inquiry
-12) Checking loan application
-13) Employee Hiring Confirmation
-14) Meeting set up
-15) Plan set up
+### Common Features for All Users:
+- **Login to the System**
+- **Register to the System**
+- **Manage Profile Information** (edit, delete, view, etc.)
+
+### Admin User Functionality (KHAN, M A MOHIT):
+- Website Management
+- Website Updates
+- Security Management
+- Glitch/Bug Fixing
+- Frequent News Updates
+- Social Media Management
+- Monitor Performance
+- User Interface Simplification
+- Monitor Website Traffic
+- Add/Verify/Block Management, Employee, and Board of Director Profiles
+- Manipulate Management/Employee/Board of Director Information (edit, delete, view, etc.)
+- Update Approval
+- Advertisement Management
+- Notifications Management
+- Help Seeking Notifications Management
+
+### Management User Functionality (AMIN, RUHUL):
+- Job Requisitions
+- Job Descriptions
+- Job Board Posting
+- Social Recruiting
+- Job Offer Extension
+- Background Check
+- Organize Training Programs
+- Candidate Pre-Screening
+- Applicant Tracking System (ATS)
+- Employee Application Review
+- Employee Performance Monitoring
+- Branded Company Job Site Management
+- Salary Planning
+- Hiring and Firing
+- Auto-Response Management
+
+### Employee User Functionality (HOSSAIN, MD. FAHAD):
+- Attendance Management
+- Vacation Application
+- Overtime Payment Requests
+- Transfer Application
+- Resignation Application
+- Business Idea Presentation
+- Job Reference Application
+- Submit Reimbursement Slips
+- Self-Training Management
+- Promotional Application
+- Overall Performance Review
+- Timesheet and Task Review
+- Document Management
+- Inquiry About Loan Programs
+
+### Board of Director User Functionality (RAHMAN, S.M MUNTASIR):
+- Training Program Approval
+- Executive Hiring and Firing
+- Executive Performance Appraisal
+- Executive Salary Management
+- Attendance Record Review
+- Personnel Planning
+- Annual Budget Management
+- Executive Compensation Management
+- Executive Job Advertisement
+- Inquiry Handling
+- Loan Application Review
+- Employee Hiring Confirmation
+- Meeting Setup
+- Strategic Planning
+
+
 
 ## Prerequisites
 
-Make sure you have the following software installed on your machine:
+Ensure that the following software is installed on your machine:
 
 - [XAMPP](https://www.apachefriends.org/index.html) or [LAMP](https://bitnami.com/stack/lamp)
 - [MySQL](https://dev.mysql.com/downloads/mysql/) or [phpMyAdmin](https://www.phpmyadmin.net/)
@@ -93,21 +97,21 @@ Make sure you have the following software installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/php-project.git
+    git clone https://github.com/M-A-Mohit-Khan/HR-MANAGEMENT-SYSTEM.git
     ```
 
 2. Move the project to the appropriate directory:
 
-   For XAMPP (on Windows, typically in the `htdocs` folder):
+    For XAMPP (Windows, typically in the `htdocs` folder):
 
     ```bash
-    move php-project C:\xampp\htdocs\
+    move HR-MANAGEMENT-SYSTEM C:\xampp\htdocs\
     ```
 
-   For LAMP (on Linux, typically in the `/var/www/html` folder):
+    For LAMP (Linux, typically in the `/var/www/html` folder):
 
     ```bash
-    mv php-project /var/www/html/
+    sudo mv HR-MANAGEMENT-SYSTEM /var/www/html/
     ```
 
 3. Start your XAMPP or LAMP server.
@@ -121,19 +125,16 @@ Make sure you have the following software installed on your machine:
     ```
 
 2. Create a new database:
-
     - Click on the "Databases" tab.
     - Enter a database name (e.g., `php_project_db`) and click "Create."
 
-3. Import sample data (optional):
-
+3. Import Sample Data (optional):
     - Select the newly created database.
     - Navigate to the "Import" tab.
     - Choose a sample SQL file (if provided) and click "Go."
 
-4. Update the project configuration:
-
-    - Open the project's configuration file (e.g., `config.php`).
+4. Update the Project Configuration:
+    - Open the project’s configuration file (e.g., `config.php`).
     - Update the database connection details (hostname, username, password, and database name).
 
 ## Usage
@@ -143,18 +144,22 @@ Make sure you have the following software installed on your machine:
     For XAMPP:
 
     ```url
-    http://localhost/php-project/
+    http://localhost/HR-MANAGEMENT-SYSTEM/
     ```
 
     For LAMP:
 
     ```url
-    http://localhost/php-project/
+    http://localhost/HR-MANAGEMENT-SYSTEM/
     ```
 
-2. You should see the project running with the data from your MySQL database.
+2. You should see the project running with data from your MySQL database.
 
 ## Configuration
 
 - Ensure that your server (XAMPP or LAMP) is running and configured correctly.
 - Check the project configuration files (e.g., `config.php`) for any specific settings.
+
+---
+
+This version organizes the content clearly, making it easy to understand and follow the instructions.
